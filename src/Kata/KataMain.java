@@ -1,8 +1,6 @@
 package Kata;
 
 
-import java.util.Arrays;
-import java.util.Random;
 
 class KataMain {
     public static void main(String[] args) {
