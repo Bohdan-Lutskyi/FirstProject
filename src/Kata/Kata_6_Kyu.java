@@ -3,6 +3,8 @@ package Kata;
 import java.util.*;
 import java.util.stream.Stream;
 
+//comment from Sombra
+
 public class Kata_6_Kyu {
     class Solution {
         public int minimumNumber(int[] numbers) {
