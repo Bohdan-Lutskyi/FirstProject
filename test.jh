@@ -1,0 +1,12 @@
+entity Notification { 
+priority NotificationPriority required, 
+title String required maxlength(500), 
+description TextBlob, userRoles TextBlob,
+enabled Boolean
+}
+entity UserNotification {}
+enum NotificationPriority {ERROR, WARNING, INFO}
+// Relationships
+relationship OneToMany { User{userNotification} to UserNotification,  Notification{userNotification} to UserNotification}
+dto * with mapstruct
+service * with serviceImpl
